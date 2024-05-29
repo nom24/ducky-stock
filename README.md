@@ -1,4 +1,4 @@
-# Stock Market Discord Bot
+# Ducky Stock 
 
 This Discord bot simulates a stock market environment, allowing users to buy and sell virtual stocks, trade stocks and currency, and view their portfolio.
 
@@ -11,6 +11,10 @@ This Discord bot simulates a stock market environment, allowing users to buy and
 
 ## Commands
 
+### Setup
+
+- **`/setup`**: Set up your trading account.
+
 ### Buying Stocks
 - **`/buy`**: Buy a specified quantity of a stock.
   - Parameters:
@@ -22,12 +26,36 @@ This Discord bot simulates a stock market environment, allowing users to buy and
   - Parameters:
     - `stock`: The stock ID to sell.
     - `quantity`: The quantity of the stock to sell.
+      
+- **`/sellall`**: Sell all of your current holdings.
+
+### Coin Currency
+- **`/pay`**: Pay a user a specified amount of coins.
+  - Parameters:
+    - `user`: The user to pay.
+    - `amount`: The amount of coins to transfer.
+   
+- **`/addcoins`**: Add a specified amount of coins to a user (Admin command).
+  - Parameters:
+    - `user`: The user to which to add coins.
+    - `amount`: The amount of coins to add.
+
+- **`/balance`**: Check your current coin balance.
 
 ### Viewing Portfolio
 - **`/portfolio`**: View your current stock holdings and total portfolio value.
 
 ### Checking Stock Prices
-- **`/checkstocks`**: View current stock prices and cumulative holdings.
+- **`/checkstocks`**: View all current stock prices and cumulative holdings.
+  
+- **`/price`**: Check the price of a specified stock.
+  - Parameters:
+    - `stock`: The stock ID to check.
+   
+- **`/create`**: Create a stock.
+  - Parameters:
+    - `stock`: The stock ID to create.
+    - `initial_price`: The initial value of the new stock.
 
 ## Stock Prices
 Stock prices are dynamically adjusted based on user transactions. Buying stocks increases the price, while selling stocks decreases it. The changes are calculated using the following logic:
