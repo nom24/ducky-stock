@@ -9,7 +9,7 @@ const TRANSACTION_LOG_FILE = 'transactions.txt';
 
 
 client.once('ready', () => {
-    console.log('Ready to start trading!');
+    console.log('Initialising the stock market...');
 
     setInterval(updateStockPrices, 60000);
     setInterval(updateStatus, 10000);
