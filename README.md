@@ -1,5 +1,7 @@
 # Ducky Stock 
 
+![ducky stock mascot](https://cdn11.bigcommerce.com/s-nf2x4/images/stencil/160w/products/1051/11053/Businessman-Rubber-Duck-Schanables-3__86677.1685876150.jpg?c=2)
+
 This Discord bot simulates a stock market environment, allowing users to buy and sell virtual stocks, trade stocks and currency, and view their portfolio.
 
 ## Features
